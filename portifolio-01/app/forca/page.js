@@ -47,7 +47,7 @@ export default function Forca() {
 
   return (
     <div className={styles.page}>
-      <span className={styles.eyebrow}>Projeto pessoal</span>
+      <span className={styles.eyebrow}>Projeto</span>
       <h1 className={styles.title}>Jogo da Forca</h1>
       <p className={styles.subtitle}>
         Adivinhe a palavra escolhida antes que o desenho seja completado.
