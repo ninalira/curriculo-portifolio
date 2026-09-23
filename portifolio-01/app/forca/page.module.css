@@ -1,0 +1,187 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 24px 96px;
+}
+
+.eyebrow {
+  font-weight: 700;
+  font-size: var(--fs-body);
+  color: var(--accent-2);
+}
+
+.title {
+  font-size: var(--fs-h1);
+  margin-top: 6px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: var(--fs-body-lg);
+  margin-top: 12px;
+  max-width: 56ch;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  margin-top: 40px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+  min-width: 220px;
+}
+
+.palavra {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.letraSlot {
+  min-width: 1ch;
+  border-bottom: 3px solid var(--border);
+  text-align: center;
+  padding: 0 2px;
+}
+
+.contadorErros {
+  font-size: var(--fs-body);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.mensagem {
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: var(--fs-body);
+}
+
+.mensagemVitoria {
+  background: var(--success-soft);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+.mensagemDerrota {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border: 1px solid var(--danger);
+}
+
+.botaoReiniciar {
+  align-self: flex-start;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  color: var(--text);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: var(--fs-body);
+  transition: transform 0.15s ease;
+}
+
+.botaoReiniciar:hover {
+  transform: translateY(-1px);
+}
+
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.tecla {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: var(--fs-body);
+  transition: border-color 0.15s ease, background 0.15s ease, opacity 0.15s ease;
+}
+
+.tecla:not(:disabled):hover {
+  border-color: var(--accent-2);
+}
+
+.tecla:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.teclaCorreta {
+  background: var(--success-soft);
+  border-color: var(--success);
+  color: var(--success);
+  opacity: 1;
+}
+
+.teclaIncorreta {
+  background: var(--danger-soft);
+  border-color: var(--danger);
+  color: var(--danger);
+  opacity: 1;
+}
+
+
+.historico {
+  margin-top: 32px;
+}
+
+.historicoTitulo {
+  font-size: var(--fs-small);
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.historicoLista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-weight: 700;
+  font-size: var(--fs-body);
+}
+
+.historicoVazio {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.historicoCorreta,
+.historicoIncorreta {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.historicoCorreta {
+  background: var(--success-soft);
+  color: var(--success);
+}
+
+.historicoIncorreta {
+  background: var(--danger-soft);
+  color: var(--danger);
+}
