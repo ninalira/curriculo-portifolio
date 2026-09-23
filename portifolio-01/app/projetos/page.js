@@ -32,7 +32,7 @@ const projetos = [
   {
     titulo: 'Delivery de pizza',
     descricao:
-      'No meus estudo de Programação Orientada a Objetos, em grupos criamos um sistema em terminal para gestão de um delivery de pizza e eventos, com relatórios de desempenho.',
+      'Nos meus estudo de Programação Orientada a Objetos, em grupos criamos um sistema em terminal para gestão de um delivery de pizza e eventos, com relatórios de desempenho.',
     tags: ['Java'],
     href: '#',
     interno: false,
@@ -41,7 +41,7 @@ const projetos = [
   {
     titulo: 'Banco de dados para clínica veterinária',
     descricao:
-      'Durante a cadeira de Projeto de Banco de Dados, criei uma banco para uma clinica veterinária, desde a modelagem, a verificação da normalização e a implementação no MySQL.',
+      'Durante a cadeira de Projeto de Banco de Dados, criei um banco para uma clinica veterinária, desde a modelagem, a verificação da normalização e a implementação no MySQL.',
     tags: ['MySQL'],
     href: '#',
     interno: false,
@@ -64,10 +64,8 @@ export default function Projetos() {
         {projetos.map((projeto) => (
           <article key={projeto.titulo} className={styles.card}>
 
-            {/* A área da imagem só aparece quando o projeto possui uma imagem */}
             {projeto.imagem && (
               <div className={styles.imagemWrapper}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={projeto.imagem}
                   alt={projeto.titulo}
